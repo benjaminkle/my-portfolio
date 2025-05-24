@@ -75,6 +75,9 @@ body {
 /** Responsive Setting for mainbox **/
 @media screen and (max-width: 600px) {
   .mainbox {
+    max-width: 120vh;
+    min-height: 80vh;
+    width: 99%;
     margin: 2rem auto;
   }
 }
@@ -158,6 +161,12 @@ body {
   color: #4b5563;
   opacity: 75%;
   animation: bounce 2s infinite;
+}
+/** Responsive Setting for scroll-hint **/
+@media screen and (max-width: 600px) {
+  .scroll-hint {
+    font-size: 20px;
+  }
 }
 
 /*ABOUT SECTION*/
