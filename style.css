@@ -60,13 +60,13 @@ body {
 .main-title {
   display: flex;
   align-items: center;
-  gap: flex;
+  gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
 }
 .avatar {
   display: inline;
-  width: 250px;
+  width: 200px;
   height: auto;
   margin-bottom: 10px;
   border-radius: 90%;
