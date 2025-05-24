@@ -40,6 +40,15 @@ body {
   border-radius: 5px;
 }
 
+/** Responsive Setting for Mobile Device **/
+@media screen and (max-width: 600px) {
+  .nav-link {
+    flex-direction: column;
+    text-align: center;
+    font-size: 15px;
+  }
+}
+
 /* Inside Main Section */
 .mainbox {
   display: flex;
@@ -51,7 +60,7 @@ body {
   background: linear-gradient(to right, #faf9ff, #e0e7ff);
   border-radius: 20px;
   padding: 20px;
-  max-width: 180vh;
+  max-width: 120vh;
   min-height: 70vh;
   width: 99%;
   margin: 5rem auto;
@@ -60,7 +69,7 @@ body {
 .main-title {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   flex-wrap: wrap;
   justify-content: center;
 }
@@ -75,7 +84,7 @@ body {
 }
 .title {
   margin-top: 10px;
-  text-align: center;
+  text-align: left;
   font-size: 50px;
   font-weight: 300;
   line-height: 1;
@@ -88,7 +97,7 @@ body {
 
 .subtitle {
   margin-top: 20px;
-  font-size: 21px;
+  font-size: 20px;
   color: #4b5563;
   max-width: 700px;
   text-align: center;
@@ -111,13 +120,16 @@ body {
   }
 }
 .scroll-hint {
-  font-size: 40px;
+  justify-content: center;
+  font-size: 30px;
   font-weight: 500;
   color: #4b5563;
+  opacity: 75%;
   animation: bounce 2s infinite;
 }
 
-.footer {
+/* FOOTER */
+.copyright {
   text-align: center;
   font-size: 15px;
 }
