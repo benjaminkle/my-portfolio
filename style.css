@@ -1,0 +1,121 @@
+/** GLOBAL SCALING FOR MOBILE DEVICES **/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/** Body Basics **/
+body {
+  background: linear-gradient(to bottom, #e0e7ff, #85a0f7);
+  color: #1f2937;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+/** Navigation bar **/
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: flex;
+  margin-bottom: 200px;
+}
+.nav-link {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #374151;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 20px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+.nav-link:hover {
+  color: #7c3aed;
+  background-color: #e0e7ff;
+  border-radius: 5px;
+}
+
+/* Inside Main Section */
+.mainbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #faf9ff, #e0e7ff);
+  border-radius: 20px;
+  padding: 20px;
+  max-width: 180vh;
+  min-height: 70vh;
+  width: 99%;
+  margin: 5rem auto;
+  box-shadow: 0 20px 40px rgba(red, green, blue, alpha);
+}
+.main-title {
+  display: flex;
+  align-items: center;
+  gap: 20vh;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.avatar {
+  display: inline;
+  margin-bottom: 100px;
+  border-radius: 5px;
+  border: 4px solid #c4b5fd;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.title {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.highlight {
+  font-weight: 700;
+  color: #7c3aed;
+}
+
+.subtitle {
+  margin-top: 20px;
+  font-size: 21px;
+  color: #4b5563;
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 15vh;
+}
+
+.highlight-dark {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* SETUP for SCROLL DOWN */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+.scroll-hint {
+  font-size: 40px;
+  font-weight: 500;
+  color: #4b5563;
+  animation: bounce 2s infinite;
+}
+
+.footer {
+  text-align: center;
+  font-size: 15px;
+}
