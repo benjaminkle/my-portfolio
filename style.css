@@ -4,6 +4,9 @@
 *::after {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /** Body Basics **/
 body {
@@ -30,7 +33,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #374151;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 22px;
   padding: 20px;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
@@ -40,7 +43,7 @@ body {
   border-radius: 5px;
 }
 
-/** Responsive Setting for Mobile Device **/
+/** Responsive Setting for nav-link **/
 @media screen and (max-width: 600px) {
   .nav-link {
     flex-direction: column;
@@ -61,10 +64,19 @@ body {
   border-radius: 20px;
   padding: 20px;
   max-width: 120vh;
-  min-height: 70vh;
+  min-height: 80vh;
   width: 99%;
-  margin: 5rem auto;
+  margin: 7rem auto;
   box-shadow: 0 20px 40px rgba(red, green, blue, alpha);
+  margin-bottom: 10px;
+  transition: opacity 0.6s ease;
+  opacity: 1;
+}
+/** Responsive Setting for mainbox **/
+@media screen and (max-width: 600px) {
+  .mainbox {
+    margin: 2rem auto;
+  }
 }
 .main-title {
   display: flex;
@@ -83,11 +95,21 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 .title {
-  margin-top: 10px;
+  margin-top: 45px;
   text-align: left;
-  font-size: 50px;
+  font-size: 55px;
   font-weight: 300;
   line-height: 1;
+}
+/** Responsive Setting for title **/
+@media screen and (max-width: 600px) {
+  .title {
+    margin-top: auto;
+    text-align: center;
+    font-size: 40px;
+    line-height: 1;
+    margin-bottom: auto;
+  }
 }
 
 .highlight {
@@ -96,12 +118,22 @@ body {
 }
 
 .subtitle {
-  margin-top: 20px;
-  font-size: 20px;
+  margin-top: 50px;
+  font-size: 21px;
   color: #4b5563;
   max-width: 700px;
   text-align: center;
   margin-bottom: 15vh;
+}
+/** Responsive Setting for subtitle **/
+@media screen and (max-width: 600px) {
+  .subtitle {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 5vh;
+  }
 }
 
 .highlight-dark {
@@ -126,6 +158,59 @@ body {
   color: #4b5563;
   opacity: 75%;
   animation: bounce 2s infinite;
+}
+
+/*ABOUT SECTION*/
+.about {
+  flex-direction: column;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #faf9ff, #e0e7ff);
+  border-radius: 20px;
+  padding: 70px;
+  max-width: 120vh;
+  min-height: 60vh;
+  width: 99%;
+  margin: 20px auto;
+  box-shadow: 0 20px 40px rgba(red, green, blue, alpha);
+  opacity: 0.6;
+  transition: 0.6s ease;
+}
+
+.about-title {
+  margin-top: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: left;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.about-title-dot {
+  font-size: 40px;
+  color: #7c3aed;
+  font-weight: 800;
+}
+.about-description {
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: left;
+  font-size: 18px;
+  color: #4b5563;
+}
+
+/** Responsive Setting ABOUT ME **/
+@media screen and (max-width: 600px) {
+  .about-title {
+    padding-left: 5px;
+    text-align: left;
+    font-size: 35px;
+  }
+  .about-description {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: left;
+    font-size: 16px;
+  }
 }
 
 /* FOOTER */

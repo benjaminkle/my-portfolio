@@ -5,27 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Khoa Le's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
   </head>
   <body>
     <!--Main Center Box-->
-    <main class="mainbox">
+    <main id="main-box" class="mainbox">
       <!--NAVIGATION BAR-->
       <nav class="nav-bar">
-        <h2><a href="#about" class="nav-link">ABOUT</a></h2>
+        <h2><a href="#about-box" class="nav-link">ABOUT</a></h2>
 
         <h2><a href="#project" class="nav-link">MY PROJECT</a></h2>
 
         <h2><a href="#contact" class="nav-link">CONTACT ME</a></h2>
       </nav>
       <!--UNDER NAVIGATION BAR-->
-      <main class="main-title">
+      <section class="main-title">
         <img src="profile.jpg" alt="Khoa's Avatar" class="avatar" />
         <h1 class="title">
           Hi there!
           <br />
           my name is <span class="highlight">Khoa.</span>
         </h1>
-      </main>
+      </section>
       <p class="subtitle">
         I'm an
         <span class="highlight-dark">aspiring cybersecurity professional</span>
@@ -38,7 +39,21 @@
     </main>
 
     <!--ABOUT ME-->
-    <section class="about"></section>
+    <section id="about-box" class="about">
+      <h1 class="about-title">
+        About <span class="about-title-dot">me.</span>
+      </h1>
+      <p class="about-description">
+        A deep passion for technology and its impact on the world drives my
+        interest in this field. What began as a curiosity in digital systems has
+        grown into hands-on exploration of cybersecurity and networking, fueling
+        my commitment to pursue a career in tech. <br />
+        <br />
+        I'm continuously learning, building projects, and growing my skills with
+        the goal of becoming a well-rounded, impactful professional in the
+        industry.
+      </p>
+    </section>
     <!--MY PROJECT-->
     <section class="project"></section>
     <!--CONTACT SECTION-->
