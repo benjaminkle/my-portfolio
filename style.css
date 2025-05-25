@@ -12,13 +12,26 @@ html {
 /** Body Basics **/
 body {
   background: linear-gradient(to bottom, #e0e7ff, #85a0f7);
+  position: relative;
+  z-index: 1;
   color: #1f2937;
   margin: 0;
   padding: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
 }
-
+/**Overlay Background Image SVG **/
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("circuit.svg");
+  background-repeat: repeat;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+  pointer-events: none;
+}
 /** Navigation bar **/
 .nav-bar {
   display: flex;
@@ -44,7 +57,7 @@ body {
   border-radius: 5px;
 }
 
-/** Responsive Setting for nav-link **/
+/** Responsive Setting for nav-bar and nav-link**/
 @media screen and (max-width: 600px) {
   .nav-bar {
     display: flex;
@@ -219,7 +232,7 @@ body {
     font-size: clamp(32px, 4vw, 35px);
   }
   .about-title-dot {
-    font-size: clamp(30px, 4vw, 35px);
+    font-size: clamp(32px, 4vw, 35px);
     color: #7c3aed;
     font-weight: 800;
   }
