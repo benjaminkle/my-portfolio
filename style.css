@@ -48,15 +48,14 @@ body {
 @media screen and (max-width: 600px) {
   .nav-bar {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 0;
-    margin-bottom: 20px;
-    width: 100%;
+    margin-bottom: 5px;
   }
   .nav-link {
     flex-direction: flex;
     text-align: center;
-    font-size: clamp(14px, 4vw, 18px);
+    font-size: clamp(13px, 4vw, 18px);
   }
 }
 
