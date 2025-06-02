@@ -14,7 +14,7 @@
       <nav class="nav-bar">
         <h2><a href="#about-box" class="nav-link">ABOUT</a></h2>
 
-        <h2><a href="#project" class="nav-link">MY PROJECT</a></h2>
+        <h2><a href="#project-box" class="nav-link">MY PROJECT</a></h2>
 
         <h2><a href="#contact" class="nav-link">CONTACT ME</a></h2>
       </nav>
@@ -40,9 +40,7 @@
 
     <!--ABOUT ME-->
     <section id="about-box" class="about">
-      <h1 class="about-title">
-        About <span class="about-title-dot">me.</span>
-      </h1>
+      <h1 class="about-title">.about<span class="about-title-hl">Me</span></h1>
       <p class="about-description">
         A deep passion for technology and its impact on the world drives my
         interest in this field. What began as a curiosity in digital systems has
@@ -51,15 +49,129 @@
         <br />
         I'm continuously learning, building projects, and growing my skills with
         the goal of becoming a well-rounded, impactful professional in the
-        industry.
+        industry. <br />
+        <br />
       </p>
+      <ul class="about-list">
+        <li>Studying Computer Programming at Humber College. <br /></li>
+        <li>
+          Working toward CompTIA Network+ and Security+ certifications. <br />
+        </li>
+        <li>
+          Actively self-learning cybersecurity through hands-on tasks like log
+          analysis, incident investigation, packet sniffing, vulnerability
+          testing (e.g., SQL injection, XSS), and simulating attack scenarios to
+          build defense skills.
+        </li>
+      </ul>
+      <br />
+      <br />
+      <h1 class="about-tools">/my<span class="about-tools-hl">Tools</span></h1>
+
+      <div class="carousel-container">
+        <button class="arrow arrow-left">&#8592;</button>
+        <div class="carousel-track" id="track">
+          <div class="carousel-slide" title="Visual Studio Code">
+            <img src="icon/vscode.svg" alt="VS Code" />
+          </div>
+          <div class="carousel-slide" title="Node.js">
+            <img src="icon/node.png" alt="Node" />
+          </div>
+          <div class="carousel-slide" title="React.js">
+            <img src="icon/react.svg" alt="React" />
+          </div>
+          <div class="carousel-slide" title="NetBeans">
+            <img src="icon/netbeans.png" alt="NetBeans" />
+          </div>
+          <div class="carousel-slide" title="Wireshark">
+            <img src="icon/wireshark.png" alt="Wireshark" />
+          </div>
+          <div class="carousel-slide" title="Docker">
+            <img src="icon/docker.avif" alt="Docker" />
+          </div>
+          <div class="carousel-slide" title="Kali Linux">
+            <img src="icon/kali.svg" alt="Kali Linux" />
+          </div>
+          <div class="carousel-slide" title="GitHUB">
+            <img src="icon/github.png" alt="GitHub" />
+          </div>
+        </div>
+        <button class="arrow arrow-right">&#8594;</button>
+      </div>
     </section>
     <!--MY PROJECT-->
-    <section class="project"></section>
+    <section id="project-box" class="project">
+      <h1 class="project-title">
+        .my<span class="project-title-hl">Project</span>
+      </h1>
+      <div class="project-gallery">
+        <!--Card 1-->
+        <div class="project-card">
+          <img
+            src="images/project-currencycv.png"
+            alt="Project Image"
+            class="card-img"
+          />
+          <div class="card-body">
+            <h3 class="card-title">Currency Converter</h3>
+            <p class="card-text">
+              A simple graphical currency converter built using Python and GUI.
+              It allows users to convert an amount from one currency to another
+              based on real-time or predefined exchange rates.
+            </p>
+            <a
+              href="https://github.com/benjaminkle/currency-converter"
+              class="card-button"
+              >View Project</a
+            >
+          </div>
+        </div>
+        <!--Card 2-->
+        <div class="project-card">
+          <img src="#" alt="Project Image" class="card-img" />
+          <div class="card-body">
+            <h3 class="card-title">Network Traffic Analysis using Wireshark</h3>
+            <p class="card-text">
+              Captured plaintext FTP credentials using Wireshark in a virtual
+              lab. Simulated login from Kali to an Ubuntu FTP server to
+              demonstrate insecure protocol risks.
+            </p>
+            <a href="#" class="card-button">View Project</a>
+          </div>
+        </div>
+        <!--Card 3-->
+        <div class="project-card">
+          <img src="#" alt="Project Image" class="card-img" />
+          <div class="card-body">
+            <h3 class="card-title">Firewall and IDS/IPS Configuration</h3>
+            <p class="card-text">Description</p>
+            <a href="#" class="card-button">View Project</a>
+          </div>
+        </div>
+        <!--Card 4-->
+        <div class="project-card">
+          <img src="#" alt="Project Image" class="card-img" />
+          <div class="card-body">
+            <h3 class="card-title">SIEM Hunting with Splunk</h3>
+            <p class="card-text">In Progress</p>
+            <a href="#" class="card-button">View Project</a>
+          </div>
+        </div>
+        <!--Card 5-->
+        <div class="project-card">
+          <img src="#" alt="Project Image" class="card-img" />
+          <div class="card-body">
+            <h3 class="card-title">Phishing Email Detection</h3>
+            <p class="card-text">In progress</p>
+            <a href="#" class="card-button">View Project</a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!--CONTACT SECTION-->
     <section class="contact"></section>
+    <footer>
+      <h4 class="copyright">&copy 2025 - 2026 KhoaLe. All Rights Reserved</h4>
+    </footer>
   </body>
-  <footer>
-    <h4 class="copyright">&copy 2025 - 2026 KhoaLe. All Rights Reserved</h4>
-  </footer>
 </html>
