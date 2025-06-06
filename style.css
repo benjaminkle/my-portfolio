@@ -27,7 +27,7 @@ body {
   color: #1f2937;
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(--main-font-family);
   scroll-behavior: smooth;
 }
 /**Overlay Background Image SVG **/
@@ -45,7 +45,7 @@ body::before {
 /** Navigation bar **/
 .nav-bar {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: space-around;
   gap: 50px;
   margin-bottom: 20px;
 }
@@ -54,10 +54,9 @@ body::before {
   flex-wrap: wrap;
   align-items: center;
   text-decoration: none;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #374151;
   font-weight: 700;
-  font-size: 22px;
+  font-size: clamp(18px, 3vw, 22px);
   padding: 20px;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
@@ -73,30 +72,26 @@ body::before {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: var(--section-bg-color);
   border-radius: 20px;
   padding: 20px;
-  max-width: 120vh;
-  min-height: 80vh;
-  width: 99%;
-  margin: 7rem auto;
-  box-shadow: 0 20px 40px rgba(red, green, blue, alpha);
-  margin-bottom: 10px;
+  max-width: 1100px;
+  min-height: 780px;
+  width: 95%;
+  margin: 7rem auto 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   transition: opacity 0.6s ease;
   opacity: 1;
 }
 .main-title {
   display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
-  justify-content: center;
 }
 .avatar {
   display: inline;
-  width: 200px;
+  width: 190px;
   height: auto;
   margin-bottom: 10px;
   border-radius: 90%;
@@ -106,7 +101,7 @@ body::before {
 .title {
   margin-top: 45px;
   text-align: left;
-  font-size: 55px;
+  font-size: clamp(42px, 4vw, 55px);
   font-weight: 300;
   line-height: 1;
 }
@@ -118,7 +113,7 @@ body::before {
 
 .subtitle {
   margin-top: 50px;
-  font-size: 21px;
+  font-size: clamp(18px, 3vw, 21px);
   color: var(--subtext-color);
   max-width: 700px;
   text-align: center;
@@ -148,23 +143,21 @@ body::before {
 .about {
   flex-direction: column;
   align-items: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: var(--section-bg-color);
   border-radius: 20px;
   padding: 70px;
-  max-width: 120vh;
-  min-height: 80vh;
-  width: 99%;
+  max-width: 1100px;
+  min-height: 780px;
+  width: 95%;
   margin: 20px auto;
-  box-shadow: 0 20px 40px rgba(red, green, blue, alpha);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   opacity: 0.6;
   transition: 0.6s ease;
 }
 
 .about-title {
   margin-top: 25px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-inline: 40px;
   text-align: left;
   font-size: 40px;
   margin-bottom: 10px;
@@ -186,30 +179,24 @@ body::before {
   font-weight: 800;
 }
 .about-description {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-inline: 35px;
   text-align: justify;
-  font-size: 19px;
+  font-size: 17px;
+  word-spacing: -1px;
   color: var(--subtext-color);
 }
 
 .about-list {
   color: var(--subtext-color);
-  padding-left: 80px;
-  padding-right: 100px;
-  margin: 0 auto;
-  font-size: 17px;
-  text-align: justify;
+  padding-inline: 30px;
+  line-height: 1.6;
+  font-size: 16px;
+  text-align: left;
 }
 
-.about-list li {
-  padding-left: 40px;
-  margin-bottom: 0.5em;
-}
 .about-tools {
   margin-top: 15px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-inline: 40px;
   text-align: left;
   font-size: 30px;
   margin-bottom: 10px;
@@ -224,7 +211,7 @@ body::before {
 .carousel-container {
   position: relative;
   width: 85%;
-  max-width: 600px; /* 4 visible icons */
+  max-width: 500px; /* 4 visible icons */
   margin: auto;
   overflow: hidden;
 }
@@ -280,30 +267,31 @@ body::before {
 @media screen and (max-width: 615px) {
   .arrow {
     font-size: 15px;
-    padding: 5px;
+    padding: 2px;
+  }
+  .carousel-container {
+    min-width: 200px;
   }
 }
 /**MY PROJECT SECTION**/
 .project {
   flex-direction: column;
   align-items: center;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: var(--section-bg-color);
   border-radius: 20px;
   padding: 70px;
-  max-width: 120vh;
-  min-height: 100vh;
-  width: 99%;
+  max-width: 1100px;
+  min-height: 780px;
+  width: 95%;
   margin: 20px auto;
-  box-shadow: 0 20px 40px rgba(red, green, blue, alpha);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   opacity: 0.6;
   transition: 0.6s ease;
 }
 
 .project-title {
   margin-top: 15px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-inline: 40px;
   text-align: left;
   font-size: 40px;
   margin-bottom: 10px;
@@ -350,8 +338,8 @@ body::before {
 
 .card-img {
   width: 100%;
-  height: 140px;
-  object-fit: cover;
+  height: 160px;
+  object-fit: scale-down;
   filter: grayscale(100%);
   transition: filter 0.3s ease;
 }
@@ -366,7 +354,7 @@ body::before {
 }
 
 .card-title {
-  margin: 0;
+  margin-top: -10px;
   font-size: 19px;
   font-weight: bold;
 }
@@ -395,7 +383,11 @@ body::before {
 /* FOOTER */
 .copyright {
   text-align: center;
-  font-size: 15px;
+  font-size: 13px;
+  color: var(--subtext-color);
+  font-family: "Lucida Sans";
+  letter-spacing: 2px;
+  user-select: none;
 }
 
 /** RESPONSIVE SETTING SECTION (FOR DEVICES WIDTH SMALLER THAN 615px**/
@@ -406,9 +398,11 @@ body::before {
     flex-wrap: nowrap;
     gap: 0;
     margin-bottom: 5px;
+    margin-top: 5px;
   }
   .nav-link {
-    flex-direction: flex;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     font-size: clamp(13px, 4vw, 18px);
   }
@@ -416,10 +410,8 @@ body::before {
 /** Responsive Setting for main title and subtitle **/
 @media screen and (max-width: 615px) {
   .mainbox {
-    max-width: 120vh;
-    min-height: 80vh;
-    min-width: 400px;
-    width: 99%;
+    min-width: 280px;
+    min-height: 600px;
     margin: 2rem auto;
   }
   .title {
@@ -435,6 +427,10 @@ body::before {
     text-align: center;
     padding: 25px;
     margin-bottom: 5vh;
+  }
+  .avatar {
+    width: 200px;
+    height: auto;
   }
 }
 
@@ -453,15 +449,12 @@ body::before {
 /** Responsive Setting ABOUT ME **/
 @media screen and (max-width: 615px) {
   .about {
-    max-width: 120vh;
-    min-height: 80vh;
-    min-width: 400px;
-    width: 99%;
+    min-width: 280px;
     margin: 2rem auto;
   }
   .about-title {
     padding-left: 5px;
-    font-size: clamp(32px, 4vw, 35px);
+    font-size: clamp(25px, 4vw, 35px);
   }
   .about-title::after {
     left: 5px;
@@ -471,29 +464,26 @@ body::before {
   }
 
   .about-title-hl {
-    font-size: clamp(32px, 4vw, 35px);
+    font-size: clamp(25px, 4vw, 35px);
   }
   .about-description {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-inline: 5px;
     font-size: clamp(13px, 4vw, 16px);
+    text-align: left;
   }
   .about-list {
     font-size: clamp(12px, 4vw, 15px);
-    width: 45vh;
-    padding-left: 15px;
+    padding-left: 5px;
     text-align: left;
   }
-  .about-list li {
-    padding-left: 5px;
-    margin-bottom: 0.5em;
-  }
+
   .about-tools {
+    margin-top: -15px;
     padding-left: 5px;
-    font-size: clamp(26px, 4vw, 28px);
+    font-size: clamp(18px, 4vw, 28px);
   }
   .about-tools-hl {
-    font-size: clamp(26px, 4vw, 32px);
+    font-size: clamp(18px, 4vw, 32px);
     font-weight: 800;
   }
 }
@@ -501,15 +491,12 @@ body::before {
 /** Responsive Setting for MY PROCJECT **/
 @media screen and (max-width: 615px) {
   .project {
-    max-width: 120vh;
-    min-height: 80vh;
-    min-width: 400px;
-    width: 99%;
+    min-width: 280px;
     margin: 2rem auto;
   }
   .project-title {
     padding-left: 5px;
-    font-size: clamp(32px, 4vw, 35px);
+    font-size: clamp(25px, 4vw, 35px);
   }
   .project-title::after {
     left: 5px;
@@ -519,6 +506,29 @@ body::before {
   }
 
   .project-title-hl {
-    font-size: clamp(32px, 4vw, 35px);
+    font-size: clamp(25px, 4vw, 35px);
+  }
+  .card-img {
+    max-height: 130px;
+  }
+  .card-body {
+    width: 100%;
+  }
+
+  .card-title {
+    margin-top: -10px;
+    font-size: clamp(15px, 4vw, 16px);
+  }
+
+  .card-text {
+    margin-top: -10px;
+    font-size: clamp(13px, 3vw, 16px);
+  }
+
+  .card-button {
+    font-size: clamp(13px, 2vw, 16px);
+  }
+  .copyright {
+    min-width: 280px;
   }
 }
