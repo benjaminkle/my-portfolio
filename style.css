@@ -46,7 +46,7 @@ body::before {
 .nav-bar {
   display: flex;
   justify-content: space-around;
-  gap: 50px;
+  gap: 30px;
   margin-bottom: 20px;
 }
 .nav-link {
@@ -57,13 +57,18 @@ body::before {
   color: #374151;
   font-weight: 700;
   font-size: clamp(18px, 3vw, 22px);
-  padding: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  width: 170px;
+  justify-content: center;
   transition: color 0.2s ease, background-color 0.2s ease;
 }
 .nav-link:hover {
   color: var(--hightlight-color);
   background-color: var(--hover-bg-color);
   border-radius: 5px;
+  width: 170px;
+  justify-content: center;
 }
 
 /* Inside Main Section */
@@ -179,6 +184,7 @@ body::before {
   font-weight: 800;
 }
 .about-description {
+  margin-top: 30px;
   padding-inline: 35px;
   text-align: justify;
   font-size: 17px;
@@ -270,7 +276,7 @@ body::before {
     padding: 2px;
   }
   .carousel-container {
-    min-width: 200px;
+    min-width: 250px;
   }
 }
 /**MY PROJECT SECTION**/
@@ -399,12 +405,18 @@ body::before {
     gap: 0;
     margin-bottom: 5px;
     margin-top: 5px;
+    justify-content: center;
   }
   .nav-link {
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    font-size: clamp(13px, 4vw, 18px);
+    font-size: clamp(12px, 2vh, 17px);
+    width: 90px;
+    height: 50px;
+    padding: 0;
+  }
+  .nav-link:hover {
+    width: 90px;
+    height: 50px;
   }
 }
 /** Responsive Setting for main title and subtitle **/
