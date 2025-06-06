@@ -409,10 +409,11 @@ body::before {
   }
   .nav-link {
     text-align: center;
-    font-size: clamp(12px, 1.5vh, 15px);
+    font-size: clamp(12px, 1.9vh, 15px);
     width: 90px;
     height: 50px;
-    padding: 0;
+    padding: 6px;
+    word-spacing: -2.5px;
   }
   .nav-link:hover {
     width: 90px;
