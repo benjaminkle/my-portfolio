@@ -16,7 +16,7 @@
 
         <h2><a href="#project-box" class="nav-link">MY PROJECT</a></h2>
 
-        <h2><a href="#contact-box" class="nav-link">CONTACT ME</a></h2>
+        <h2><a href="#contact-box" class="nav-link">CONTACT</a></h2>
       </nav>
       <!--UNDER NAVIGATION BAR-->
       <section class="main-title">
@@ -192,19 +192,7 @@
         Fill out the form to reach out and I'll get back to you as soon as
         possible.
       </p>
-      <form
-        id="contactForm"
-        class="contact-form"
-        action="https://api.web3forms.com/submit"
-        method="POST"
-      >
-        <!-- Access Key -->
-        <input
-          type="hidden"
-          name="access_key"
-          value="9b330571-0dc0-496e-8674-18611d4cc58a"
-        />
-
+      <form id="contactForm" class="contact-form" action="#" method="POST">
         <!-- Form Inputs -->
         <label for="name">Name:</label>
         <input type="text" name="name" required />
@@ -214,20 +202,6 @@
         <input type="text" name="subject" required />
         <label for="message">Message:</label>
         <textarea name="message" required></textarea>
-        <input
-          type="hidden"
-          name="redirect"
-          value="https://web3forms.com/success"
-        />
-
-        <!-- Honeypot Spam Protection -->
-        <input
-          type="checkbox"
-          name="botcheck"
-          class="hidden"
-          style="display: none"
-        />
-
         <button class="form-button" type="submit">Submit Form</button>
       </form>
     </section>

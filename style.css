@@ -648,3 +648,35 @@ body::before {
     min-width: 280px;
   }
 }
+/** Responsive Setting for CONTACT SECTION **/
+@media screen and (max-width: 615px) {
+  .contact {
+    min-width: 280px;
+    margin: 2rem auto;
+  }
+  .contact-title {
+    padding-left: 5px;
+    font-size: clamp(25px, 4vw, 35px);
+  }
+  .contact-title::after {
+    left: 5px;
+    bottom: -5px;
+    width: 65%;
+    height: 2px;
+  }
+
+  .contact-title-hl {
+    font-size: clamp(25px, 4vw, 35px);
+  }
+  .contact-description {
+    padding-inline: 5px;
+    font-size: clamp(13px, 4vw, 16px);
+    text-align: left;
+  }
+  .contact-form label {
+    font-size: clamp(13px, 4vw, 16px);
+  }
+  .form-button {
+    font-size: clamp(13px, 4vw, 16px);
+  }
+}
