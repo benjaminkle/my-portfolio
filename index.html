@@ -16,7 +16,7 @@
 
         <h2><a href="#project-box" class="nav-link">MY PROJECT</a></h2>
 
-        <h2><a href="#contact" class="nav-link">CONTACT ME</a></h2>
+        <h2><a href="#contact-box" class="nav-link">CONTACT ME</a></h2>
       </nav>
       <!--UNDER NAVIGATION BAR-->
       <section class="main-title">
@@ -184,7 +184,48 @@
       </div>
     </section>
     <!--CONTACT SECTION-->
-    <section class="contact"></section>
+    <section id="contact-box" class="project">
+      <h1 class="contact-title">
+        .Getin<span class="contact-title-hl">Touch</span>
+      </h1>
+      <p class="contact-description">
+        Fill out the form to reach out and I'll get back to you as soon as
+        possible.
+      </p>
+      <form
+        id="contactForm"
+        class="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <!-- Access Key -->
+        <input
+          type="hidden"
+          name="access_key"
+          value="benjamin.kle@hotmail.com"
+        />
+
+        <!-- Form Inputs -->
+        <label for="name">Name:</label>
+        <input type="text" name="name" required />
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" required />
+        <label for="subject">Subject:</label>
+        <input type="subject" name="subject" required />
+        <label for="message">Message:</label>
+        <textarea name="message" required></textarea>
+
+        <!-- Honeypot Spam Protection -->
+        <input
+          type="checkbox"
+          name="botcheck"
+          class="hidden"
+          style="display: none"
+        />
+
+        <button class="form-button" type="submit">Submit Form</button>
+      </form>
+    </section>
     <footer>
       <h4 class="copyright">&copy 2025 - 2026 KhoaLe. All Rights Reserved</h4>
     </footer>

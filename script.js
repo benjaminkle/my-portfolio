@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("main-box"),
     document.getElementById("about-box"),
     document.getElementById("project-box"),
+    document.getElementById("contact-box"),
   ];
 
   window.addEventListener("scroll", () => {
@@ -60,4 +61,31 @@ track.addEventListener("touchend", (e) => {
   } else if (diff < -50) {
     track.scrollBy({ left: -scrollStep, behavior: "smooth" });
   }
+});
+
+//Javascript Validation for Form(Contact Section)
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+  e.preventDefault(); // Stop default form submission
+
+  const form = e.target;
+  const name = form.name.value.trim();
+  const email = form.email.value.trim();
+  const subject = form.subject.value.trim();
+  const message = form.message.value.trim();
+
+  // Basic empty check
+  if (!name || !email || !subject || !message) {
+    alert("Please fill in all fields.");
+    return;
+  }
+
+  // Email format validation
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailPattern.test(email)) {
+    alert("Please enter a valid email address.");
+    return;
+  }
+
+  // All good: redirect to thank you page
+  window.location.href = "thankyou.html";
 });
