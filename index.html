@@ -192,8 +192,18 @@
         Fill out the form to reach out and I'll get back to you as soon as
         possible.
       </p>
-      <form id="contactForm" class="contact-form" action="#" method="POST">
-        <!-- Form Inputs -->
+      <!-- Form Inputs (Using Web3Forms-WebAPI library for submitting forms) -->
+      <form
+        id="contactForm"
+        class="contact-form"
+        action="https://api.web3forms.com/submit"
+        method="POST"
+      >
+        <input
+          type="hidden"
+          name="apikey"
+          value="3e0a2b4b-a30b-47e9-9612-3890d6896fb6"
+        />
         <label for="name">Name:</label>
         <input type="text" name="name" required />
         <label for="email">Your Email:</label>
@@ -203,6 +213,12 @@
         <label for="message">Message:</label>
         <textarea name="message" required></textarea>
         <button class="form-button" type="submit">Submit Form</button>
+        <!-- Custom Confirmation / Success Page -->
+        <input
+          type="hidden"
+          name="redirect"
+          value="https://benjaminkle.github.io/my-portfolio/thankyou.html"
+        />
       </form>
     </section>
     <footer>

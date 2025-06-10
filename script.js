@@ -63,10 +63,8 @@ track.addEventListener("touchend", (e) => {
   }
 });
 
-//Javascript Validation for Form(Contact Section)
+//Javascript Validation for Form (Contact Section)
 document.getElementById("contactForm").addEventListener("submit", function (e) {
-  e.preventDefault(); // Stop default form submission
-
   const form = e.target;
   const name = form.name.value.trim();
   const email = form.email.value.trim();
@@ -75,6 +73,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
 
   // Basic empty check
   if (!name || !email || !subject || !message) {
+    e.preventDefault(); // stop submit
     alert("Please fill in all fields.");
     return;
   }
@@ -82,10 +81,8 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
   // Email format validation
   const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   if (!emailPattern.test(email)) {
+    e.preventDefault(); // stop submit
     alert("Please enter a valid email address.");
     return;
   }
-
-  // All good: redirect to thank you page
-  window.location.href = "thankyou.html";
 });
