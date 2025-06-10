@@ -512,7 +512,7 @@ body::before {
   }
   .nav-link {
     text-align: center;
-    font-size: clamp(12px, 1.8vh, 15px);
+    font-size: clamp(12px, 4vh, 15px);
     width: 90px;
     height: 50px;
     padding: 6px;
